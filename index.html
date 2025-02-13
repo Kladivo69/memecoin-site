@@ -9,15 +9,22 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
-            background-color: black;
-            color: white;
+            background: url('washing-machine-pattern.png') repeat;
+            background-size: cover;
+            color: black;
+            animation: moveBackground 10s linear infinite;
         }
+        @keyframes moveBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: 100px 100px; }
+        }
+        
         h1, h2 {
-            color: white;
+            color: black;
         }
         p {
             font-size: 18px;
-            color: white;
+            color: black;
             max-width: 600px;
             margin: 0 auto;
         }
